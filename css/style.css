@@ -3,7 +3,7 @@ body {
     font-family: 'Alpha Echo', sans-serif;
     text-transform: uppercase;
     color: #333;
-    background-image: url("/images/bg1.jpg");
+    background-image: url("bg1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0 auto;
@@ -19,8 +19,7 @@ body::before{
     z-index: -1;
 }
 .section{
-    /*background: linear-gradient(to right, #d3cce3, #e9e4f0);*/
-    background-image: url("/images/background.jpg");
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
     width: fit-content;
     margin: 3% auto;
     padding: 50px 40px 20px 40px;
