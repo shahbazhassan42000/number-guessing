@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Alpha Echo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Alpha Echo'), url('/css/alpha_echo.woff') format('woff');
+}
