@@ -2,5 +2,5 @@
     font-family: 'Blanka';
     font-style: normal;
     font-weight: 400;
-    src: local('Blanka'), url('/css/Blanka-Regular.woff') format('woff');
+    src: local('Blanka'), url('css/Blanka-Regular.woff') format('woff');
 }
