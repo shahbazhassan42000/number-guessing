@@ -3,7 +3,7 @@ body {
     font-family: 'Alpha Echo', sans-serif;
     text-transform: uppercase;
     color: #333;
-    background: url("images/bg1.jpg") no-repeat;
+    background: url("/images/bg1.jpg") no-repeat;
     background-size: 100%;
     margin: 0 auto;
 }
