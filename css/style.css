@@ -19,8 +19,8 @@ body::before{
     z-index: -1;
 }
 .section{
-    background: linear-gradient(to right, #d3cce3, #e9e4f0);
-
+    /*background: linear-gradient(to right, #d3cce3, #e9e4f0);*/
+    background-image: url("/images/background.jpg");
     width: fit-content;
     margin: 3% auto;
     padding: 50px 40px 20px 40px;
