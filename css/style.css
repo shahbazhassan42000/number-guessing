@@ -1,0 +1,194 @@
+/************************************** DESKTOP VIEW ****************************************/
+body {
+    font-family: 'Alpha Echo', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    background: url("/images/bg1.jpg") no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+body::before{
+    content: "";
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.section{
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+
+    width: fit-content;
+    margin: 3% auto;
+    padding: 50px 40px 20px 40px;
+    border-radius: 50px 0px;
+    text-align: center;
+}
+.heading{
+    font-family: 'Blanka', sans-serif;
+    margin-bottom: 70px;
+    font-size: 3vw;
+}
+.description{
+    margin: 20px auto;
+    font-size: 2vw;
+}
+.resultParas p{
+    font-size: 2vw;
+}
+#guessField{
+    font-family: 'Alpha Echo', sans-serif !important;
+    display: block;
+    padding: 8px 16px;
+    font-size: 3vw;
+    margin: 10px auto;
+    width: 20%;
+    line-height: 4vw;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.green{
+    color:#36cc36
+}
+.newGame{
+    display: none;
+}
+#welcomeText,.owner{
+    margin-top: 10px;
+}
+/*button Style*/
+.button:active{
+    transform:translateY(7px);
+}
+.button
+{
+    font-family: 'Blanka', sans-serif !important;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin:20px auto;
+    font-size: 3vw;
+    color: #333;
+    font-weight: bold;
+    background: #66ff66;
+    background: -moz-linear-gradient(top,  #66ff66 0%, #aaffaa 70%, #66ff66 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#66ff66), color-stop(70%,#aaffaa), color-stop(100%,#66ff66));
+    background: -webkit-linear-gradient(top,  #66ff66 0%,#aaffaa 70%,#66ff66 100%);
+    background: -o-linear-gradient(top,  #66ff66 0%,#aaffaa 70%,#66ff66 100%);
+    background: -ms-linear-gradient(top,  #66ff66 0%,#aaffaa 70%,#66ff66 100%);
+    background: linear-gradient(to bottom,  #66ff66 0%,#aaffaa 70%,#66ff66 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ff66', endColorstr='#66ff66',GradientType=0 );
+}
+.button:hover
+{
+    cursor: pointer;
+    color: #000;
+    background: #44ee44;
+    background: -moz-linear-gradient(top,  #44ee44 0%, #aaffaa 70%, #44ee44 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#44ee44), color-stop(70%,#aaffaa), color-stop(100%,#44ee44));
+    background: -webkit-linear-gradient(top,  #44ee44 0%,#aaffaa 70%,#44ee44 100%);
+    background: -o-linear-gradient(top,  #44ee44 0%,#aaffaa 70%,#44ee44 100%);
+    background: -ms-linear-gradient(top,  #44ee44 0%,#aaffaa 70%,#44ee44 100%);
+    background: linear-gradient(to bottom,  #44ee44 0%,#aaffaa 70%,#44ee44 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44ee44', endColorstr='#44ee44',GradientType=0 );
+}
+
+/***********************************************************/
+@-webkit-keyframes pulseBox {
+    0% {-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.6);}
+    100% {-webkit-box-shadow: 0px 0px 18px 0px rgba(0, 255, 0, 0.9);}
+}
+@-moz-keyframes pulseBox {
+    0% {-moz-box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.6);}
+    100% {-moz-box-shadow: 0px 0px 18px 0px rgba(0, 255, 0, 0.9);}
+}
+@-o-keyframes pulseBox {
+    0% {-o-box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.6);}
+    100% {-o-box-shadow: 0px 0px 18px 0px rgba(0, 255, 0, 0.9);}
+}
+@keyframes pulseBox {
+    0% {box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.6);}
+    100% {box-shadow: 0px 0px 18px 0px rgba(0, 255, 0, 0.9);}
+}
+
+.pulseBox {
+    -webkit-animation-name: pulseBox;
+    -moz-animation-name: pulseBox;
+    -o-animation-name: pulseBox;
+    animation-name: pulseBox;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    border: 0px;
+}
+
+/********************/
+
+@-webkit-keyframes pulseText {
+    0% {text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.7);}
+    100% {text-shadow: 0px 0px 22px rgba(0, 255, 0, 1);}
+}
+@-moz-keyframes pulseText {
+    0% {text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.7);}
+    100% {text-shadow: 0px 0px 22px rgba(0, 255, 0, 1);}
+}
+@-o-keyframes pulseText {
+    0% {text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.7);}
+    100% {text-shadow: 0px 0px 22px rgba(0, 255, 0, 1);}
+}
+@keyframes pulseText {
+    0% {text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.7);}
+    100% {text-shadow: 0px 0px 22px rgba(0, 255, 0, 1);}
+}
+
+.pulseText {
+    -webkit-animation-name: pulseText;
+    -moz-animation-name: pulseText;
+    -o-animation-name: pulseText;
+    animation-name: pulseText;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    border: 0px;
+}
+/************************************** MOBILE VIEW *****************************************/
+@media only screen and (max-width: 600px){
+    body {
+        background-size: calc(100vh);
+    }
+}
