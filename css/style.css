@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 body::before{
     content: "";
@@ -21,7 +25,6 @@ body::before{
 .section{
     background: linear-gradient(to right, #d3cce3, #e9e4f0);
     width: fit-content;
-    margin: 3% auto;
     padding: 50px 40px 20px 40px;
     border-radius: 50px 0px;
     text-align: center;
@@ -192,7 +195,6 @@ body::before{
         background-size: calc(100vh);
     }
     .section{
-        margin: 13% auto;
         padding: 50px 10px;
     }
     .heading {
