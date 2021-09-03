@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded",function (){
                 else
                     guesses.innerHTML+=", "+ user_guess.value;
                 result.style.color="#36cc36";
-                result.innerHTML="CONGRATULATIONS! You guess is right!"
+                result.innerHTML="CONGRATULATIONS! Your guess is right!"
                 submit_guess_btn.disabled=true;
                 user_guess.disabled=true;
                 hint.innerHTML="";
