@@ -191,4 +191,27 @@ body::before{
     body {
         background-size: calc(100vh);
     }
+    .section{
+        margin: 13% auto;
+        padding: 50px 10px;
+    }
+    .heading {
+        font-size: 4vh;
+    }
+    .description{
+        font-size: 3vh;
+    }
+    .resultParas p{
+        font-size: 3vh;
+    }
+    #guessField{
+        font-size: 4vh;
+        margin: 10px auto;
+        width: 30%;
+        line-height: 7vh;
+    }
+    .button{
+        margin:20px auto;
+        font-size: 3vh;
+    }
 }
