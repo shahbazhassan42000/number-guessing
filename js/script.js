@@ -11,8 +11,13 @@ document.addEventListener("DOMContentLoaded",function (){
     const welcomeText=document.querySelector("#welcomeText");
     let turns=0;    //number of turns
     //validation on releasing keys
-    user_guess.addEventListener("keyup",function () {
-        extractNumber(this);
+    user_guess.addEventListener("keyup",function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            submit_guess_btn.click();
+        }
+        else
+            extractNumber(this);
     });
     submit_guess_btn.addEventListener("click",startGame);
     newGame.addEventListener("click",resetGame);
